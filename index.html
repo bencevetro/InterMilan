@@ -17,7 +17,13 @@ img {
 
 figure {
     margin: 0;
+transition: transform 0.2s;
 }
+
+figure:hover {
+transform: scale(1.05);
+}
+
 </style>
 </head>
 <body>
@@ -37,51 +43,167 @@ figure {
 
     <!-- Tartalom részek -->
     
-	<section id="jatekosok">
-		<h2 id="jatekosok">Játékosok</h2>
-		<p>Itt lesznek a játékosok...</p>
-		<a href="https://www.foxsports.com/soccer/marcus-thuram-player"><figure>
-			<img src="thuram.webp" alt="Marcus Thuram">
-			<h4>Marcus Thuram</h4>
-			<p>csatár</p>
-		</figure>
-		</a>
-		<figure>
-			<img src="thuram.webp" alt="Marcus Thuram">
-			<h4>Marcus Thuram</h4>
-			<p>csatár</p>
-		</figure>
-		<figure>
-			<img src="thuram.webp" alt="Marcus Thuram">
-			<h4>Marcus Thuram</h4>
-			<p>csatár</p>
-		</figure>
-		<figure>
-			<img src="thuram.webp" alt="Marcus Thuram">
-			<h4>Marcus Thuram</h4>
-			<p>csatár</p>
-		</figure>
-		<figure>
-			<img src="thuram.webp" alt="Marcus Thuram">
-			<h4>Marcus Thuram</h4>
-			<p>csatár</p>
-		</figure>
-		<figure>
-			<img src="thuram.webp" alt="Marcus Thuram">
-			<h4>Marcus Thuram</h4>
-			<p>csatár</p>
-		</figure>
-		<figure>
-			<img src="thuram.webp" alt="Marcus Thuram">
-			<h4>Marcus Thuram</h4>
-			<p>csatár</p>
-		</figure>
-		<figure>
-			<img src="thuram.webp" alt="Marcus Thuram">
-			<h4>Marcus Thuram</h4>
-			<p>csatár</p>
-		</figure>
-	</section>
+	```html
+<section id="jatekosok">
+
+<h2>Játékosok</h2>
+
+<h3>Edzők</h3>
+<div class="grid">
+
+<figure>
+<img src="chivu.jpg" alt="Cristian Chivu">
+<h4>Cristian Chivu</h4>
+<p>vezetőedző</p>
+</figure>
+
+<figure>
+<img src="kolarov.jpg" alt="Aleksandar Kolarov">
+<h4>Aleksandar Kolarov</h4>
+<p>segédedző</p>
+</figure>
+
+</div>
+
+
+<h3>Kapusok</h3>
+<div class="grid">
+
+<figure>
+<a href="https://www.foxsports.com/soccer/yann-sommer-player">
+<img src="sommer.jpg">
+<h4>Yann Sommer</h4>
+<p>kapus</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/josep-martinez-player">
+<img src="martinez.jpg">
+<h4>Josep Martinez</h4>
+<p>kapus</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/raffaele-di-gennaro-player">
+<img src="gennaro.jpg">
+<h4>Raffaele Di Gennaro</h4>
+<p>kapus</p>
+</a>
+</figure>
+
+</div>
+
+
+<h3>Védők</h3>
+<div class="grid">
+
+<figure>
+<a href="https://www.foxsports.com/soccer/francesco-acerbi-player">
+<img src="ace.jpg">
+<h4>Francesco Acerbi</h4>
+<p>védő</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/stefan-de-vrij-player">
+<img src="devrij.jpg">
+<h4>Stefan De Vrij</h4>
+<p>védő</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/alessandro-bastoni-player">
+<img src="basto.jpg">
+<h4>Alessandro Bastoni</h4>
+<p>védő</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/yann-bisseck-player">
+<img src="bisseck.jpg">
+<h4>Yann Bisseck</h4>
+<p>védő</p>
+</a>
+</figure>
+
+</div>
+
+
+<h3>Középpályások</h3>
+<div class="grid">
+
+<figure>
+<a href="https://www.foxsports.com/soccer/federico-dimarco-player">
+<img src="dimarco.webp">
+<h4>Federico Dimarco</h4>
+<p>középpályás</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/hakan-calhanoglu-player">
+<img src="calha.jpg">
+<h4>Hakan Calhanoglu</h4>
+<p>középpályás</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/nicolo-barella-player">
+<img src="barella.jpg">
+<h4>Nicolo Barella</h4>
+<p>középpályás</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/davide-frattesi-player">
+<img src="frattesi.jpg">
+<h4>Davide Frattesi</h4>
+<p>középpályás</p>
+</a>
+</figure>
+
+</div>
+
+
+<h3>Csatárok</h3>
+<div class="grid">
+
+<figure>
+<a href="https://www.foxsports.com/soccer/lautaro-martinez-player">
+<img src="lautaro.jpg">
+<h4>Lautaro Martinez</h4>
+<p>csatár</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/marcus-thuram-player">
+<img src="thuram.webp">
+<h4>Marcus Thuram</h4>
+<p>csatár</p>
+</a>
+</figure>
+
+<figure>
+<a href="https://www.foxsports.com/soccer/ange-bonny-player">
+<img src="bonny.jpg">
+<h4>Ange-Yoan Bonny</h4>
+<p>csatár</p>
+</a>
+</figure>
+
+</div>
+
+</section>
+```
+
 
     <h2 id="meccsek">Meccsek</h2>
     <p>Itt lesznek a meccsek...</p>
