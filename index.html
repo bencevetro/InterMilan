@@ -5,10 +5,11 @@
     <title>Inter Milan</title>
 <style>
 img {
+	padding: 20px;
 	border-radius: 50%;
 	width: 100px;
 }
-#jatekosok {
+.grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 oszlop */
     gap: 20px;
@@ -17,11 +18,26 @@ img {
 
 figure {
     margin: 0;
-transition: transform 0.2s;
+	background-color: RoyalBlue;
+	color: white;
+	transition: transform 0.2s;
+	border-radius: 25px;
+}
+figure a {
+color: white;
 }
 
 figure:hover {
-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+section {
+	padding: 20px;
+	border-radius: 25px;
+	background-color: PaleTurquoise;
+}
+body {
+	padding: 20px;
 }
 
 </style>
@@ -38,12 +54,12 @@ transform: scale(1.05);
         <a href="#jegyek">Jegyek</a> |
         <a href="#videok">Videók</a>
     </nav>
+	<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 86 86" class="css-11d3kwy"><path fill="#ffffffff" d="M43 0C19.248 0 0 19.248 0 43s19.248 43 43 43 43-19.248 43-43S66.752 0 43 0zm0 79.857C22.647 79.857 6.143 63.353 6.143 43 6.143 22.647 22.647 6.143 43 6.143c20.353 0 36.857 16.504 36.857 36.857 0 20.353-16.504 36.857-36.857 36.857z"></path><path fill="currentColor" d="M65.857 22.36l-3.077 6.32c2.947 4.054 4.68 8.97 4.68 14.283 0 4.448-1.213 8.617-3.336 12.234l.845 9.303c5.568-5.592 8.991-13.18 8.991-21.527 0-7.91-3.055-15.114-8.103-20.613zM46.086 67.572V18.428a23.82 23.82 0 017.236 2.136L55.9 14.95A29.893 29.893 0 0043 12.04a29.893 29.893 0 00-12.9 2.91l2.578 5.614a24.101 24.101 0 017.328-2.147v49.165c-2.416-.3-4.73-.97-6.871-1.93l-.558 6.45A30.085 30.085 0 0043 73.96c3.674 0 7.206-.66 10.464-1.879l-.558-6.45a23.637 23.637 0 01-6.82 1.94zM20.144 22.36c-5.048 5.496-8.103 12.696-8.103 20.593 0 8.363 3.434 15.958 9.024 21.547l.845-9.278a23.95 23.95 0 01-3.37-12.27c0-5.309 1.734-10.223 4.68-14.264l-3.076-6.328z"></path><path fill="currentColor" d="M59.031 29.941l4.609-9.852a30.786 30.786 0 00-5.073-3.75L49.02 36.763V51.35l4.784-10.221 2.578 29.39a30.982 30.982 0 005.876-3.749l-3.227-36.829zm-22.072 7.148l-9.594-20.75a30.453 30.453 0 00-5.006 3.762l4.578 9.897-.01.174-3.17 36.597a30.59 30.59 0 005.81 3.75l2.55-29.35 4.862 10.513V37.089h-.02z"></path></svg>
 
     <hr>
 
     <!-- Tartalom részek -->
     
-	```html
 <section id="jatekosok">
 
 <h2>Játékosok</h2>
@@ -139,7 +155,7 @@ transform: scale(1.05);
 
 <figure>
 <a href="https://www.foxsports.com/soccer/federico-dimarco-player">
-<img src="dimarco.webp">
+<img src="dimarco.jpg">
 <h4>Federico Dimarco</h4>
 <p>középpályás</p>
 </a>
@@ -202,18 +218,21 @@ transform: scale(1.05);
 </div>
 
 </section>
-```
 
 
+<section>
     <h2 id="meccsek">Meccsek</h2>
     <p>Itt lesznek a meccsek...</p>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/Cjf1UIYDEds?si=Mtv4yk7zmC0pkHcj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+</section>
+<section>
     <h2 id="jegyek">Jegyek</h2>
     <p>Itt lesznek a jegy információk...</p>
-
+	<div class="swiper-slide swiper-slide-active" role="group" aria-label="6 / 14" style="height: auto; width: 320.105px; margin-right: 2px;"><a href="/en/tickets" class="css-10klw3m"><div class="eqx4cnn0 css-13cuue2"><div class="css-0"><div class="css-d0exa5"><div class="css-1f8sh1y"><img src="https://media.inter.it/jpg/competitions/logo/minimal/2025-26/1.png" alt="Serie A" class="css-1t8h0v7"></div></div><div class="css-9uw9vr"><p class="chakra-text css-m8tc3t">Apr 5th 2026</p><p class="chakra-text css-4t36f7">21:45</p><p class="chakra-text css-4t36f7">Stadio Giuseppe Meazza</p></div></div><div class="css-0"><p class="chakra-text css-1l2v43e">05 Apr</p><p class="chakra-text css-1qvay3r">Inter</p><p class="chakra-text css-17j5ia1">Roma</p><a class="chakra-button css-wxnau2" data-text="Get your tickets" href="/en/tickets">Get your tickets</a></div></div></a></div>
+</section>
+<section>
     <h2 id="videok">Videók</h2>
     <p>Itt lesznek a videók...</p>
-
+</section>
 </body>
 </html>
